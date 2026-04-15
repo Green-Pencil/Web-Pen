@@ -1,0 +1,832 @@
+/*
+* {
+  outline: 1px solid rgba(255, 0, 0, 0.5);
+}
+ */
+
+body {
+  background-color: white;
+  margin: 0;
+}
+
+.inria-sans-light {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.inria-sans-regular {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inria-sans-bold {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.inria-sans-light-italic {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.inria-sans-regular-italic {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.inria-sans-bold-italic {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+h1 {
+  font-family: "Inria Sans", system-ui;
+  font-style: normal;
+  font-size: 8vw;
+  background-color: rgb(74, 180, 194);
+  margin: 0;
+  padding-top: 1.5vw;
+  padding-bottom: 1.5vw;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+
+}
+
+h2 {
+  font-family: "Inria Sans", system-ui;
+  font-style: normal;
+  font-size: 4.5vw;
+  background-color: rgb(74, 180, 194);
+  margin: 0;
+  padding: 0.5vw;
+
+}
+
+p {
+  font-family: "Inria Sans", system-ui;
+  font-style: normal;
+  margin: 0;
+  font-size: 2vw;
+
+
+}
+
+.title1 {
+  background-color: rgba(74, 180, 194, 0.5);
+  padding-top: 1.5vw;
+  padding-bottom: 1.5vw;
+  padding-right: 1.5vw;
+}
+
+.title2 {
+  background-color: rgba(74, 180, 194, 0.5);
+  padding-top: 1.5vw;
+  padding-bottom: 1.5vw;
+  padding-left: 1.5vw;
+}
+
+.title3 {
+  background-color: rgba(74, 180, 194, 0.5);
+  padding-top: 1.5vw;
+  padding-right: 1.5vw;
+
+}
+
+.title4 {
+  background-color: rgba(74, 180, 194, 0.5);
+  padding-top: 1.5vw;
+  padding-left: 1.5vw;
+
+}
+
+
+.text.right {
+  margin-right: 25vw;
+  text-align: right;
+  padding-top: 8vw;
+  padding-left: 12vw;
+  padding-bottom: 30vw;
+}
+
+
+.text.left {
+  margin-left: 25vw;
+  text-align: left;
+  padding-top: 8vw;
+  padding-right: 12vw;
+  padding-bottom: 30vw;
+}
+
+
+
+.bottomline {
+  background-color: rgb(74, 180, 194);
+  width: 100%;
+  height: 1.5vw;
+}
+
+.topline {
+  background-color: rgb(74, 180, 194);
+  grid-column: 1/4;
+  grid-row: 2/4;
+  height: 1.5vw;
+  margin-top: -1.5vw;
+}
+
+/***************************** 1-title *****************************/
+
+#first.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10.4vw 1fr 10.4vw;
+  margin-bottom: 28vw;
+}
+
+#first img {
+  width: 100%;
+  grid-row: 1/4;
+  grid-column: 1/2;
+}
+
+#first .boxL {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#first .boxR {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.boxL h1 {
+  padding-right: 10vw;
+}
+
+.boxR h1 {
+  padding-left: 10vw;
+}
+
+
+
+/***************************** 2 *****************************/
+
+#second.container {
+  display: grid;
+  grid-template-columns: 1fr 20vw;
+  grid-template-rows: 8vw 80vh;
+}
+
+#second .boxL {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#second .mainimgL img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+#second .mainimgL {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  margin-right: 5vw;
+}
+
+#second .sideimgR img {
+  width: 100%;
+
+}
+
+#second .sideimgR {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+
+
+}
+
+#second .scroll {
+  height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+
+.boxL h2 {
+  padding-right: 10vw;
+}
+
+/***************************** 3 *****************************/
+
+#third.container {
+  display: grid;
+  grid-template-columns: 20vw 1fr;
+  grid-template-rows: 8vw 80vh;
+}
+
+#third .boxR {
+  grid-row: 1/2;
+  grid-column: 3/4;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#third .mainimgR img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+#third .mainimgR {
+  grid-row: 2/3;
+  grid-column: 2/4;
+  margin-left: 5vw;
+}
+
+#third .sideimgL img {
+  width: 100%
+}
+
+#third .sideimgL {
+
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+#third .scroll {
+  height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+.boxR h2 {
+  padding-left: 10vw;
+}
+
+
+/***************************** 4 ***************************/
+#fourth.container {
+  display: grid;
+  grid-template-columns: 1fr 20vw;
+  grid-template-rows: 8vw 80vh;
+}
+
+#fourth .boxL {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#fourth .mainimgL img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+#fourth .mainimgL {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  margin-right: 5vw;
+}
+
+#fourth .sideimgR img {
+  width: 100%
+}
+
+#fourth .sideimgR {
+
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+#fourth .scroll {
+  height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+.boxL h2 {
+  padding-right: 10vw;
+}
+
+/***************************** 5 *****************************/
+
+#fifth.container {
+  display: grid;
+  grid-template-columns: 20vw 1fr;
+  grid-template-rows: 8vw 80vh;
+}
+
+#fifth .boxR {
+  grid-row: 1/2;
+  grid-column: 3/4;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#fifth .mainimgR img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+#fifth .mainimgR {
+  grid-row: 2/3;
+  grid-column: 2/4;
+  margin-left: 5vw;
+}
+
+#fifth .sideimgL img {
+  width: 100%
+}
+
+#fifth .sideimgL {
+
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+#fifth .scroll {
+  height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.boxR h2 {
+  padding-left: 10vw;
+}
+
+/***************************** 6 *****************************/
+
+#sixth.container {
+  display: grid;
+  grid-template-columns: 1fr 20vw;
+  grid-template-rows: 8vw 80vh;
+}
+
+#sixth .boxL {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#sixth .mainimgL img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+#sixth .mainimgL {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  margin-right: 5vw;
+}
+
+#sixth .sideimgR img {
+  width: 100%
+}
+
+#sixth .sideimgR {
+
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+#sixth .scroll {
+  height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.boxL h2 {
+  padding-right: 10vw;
+}
+
+.text.right.lasttext {
+  padding-bottom: 20vw;
+}
+
+
+.moreinfo-content {
+  display: none;
+}
+
+.moreinfo-content.open {
+  overflow: visible;
+}
+
+.moreinfo-trigger {
+  cursor: pointer;
+  padding: 5vw;
+}
+
+.moreinfo-trigger:hover {
+  text-decoration: underline;
+}
+
+
+.moreinfo-inner {
+  padding-left: 5vw;
+  padding-right: 10vw;
+  padding-bottom: 10vw;
+}
+
+
+
+/***************************** footer *****************************/
+
+#footer {
+  height: 20vw;
+}
+
+.footertop {
+  background-color: rgba(74, 180, 194, 0.5);
+  padding-top: 1.5vw;
+}
+
+.footermain {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column: 1/4;
+  background-color: rgb(74, 180, 194);
+  height: 100%;
+}
+
+.footermain .text1 {
+  grid-column: 1/2;
+  padding: 2vw;
+  display: flex;
+  text-align: right;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footermain .text2 {
+  grid-column: 2/3;
+  padding: 2vw;
+  display: flex;
+
+  align-items: center;
+}
+
+.footermain .logo {
+  grid-column: 3/4;
+  padding: 5vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+
+
+
+/***************************** navigation *****************************/
+
+.scroll img {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.scroll img.angewählt {
+  opacity: 1;
+}
+
+.scroll img:not(.angewählt) {
+  opacity: 0.6;
+}
+
+
+/***************************** responsive *****************************/
+
+@media (max-width: 700px) {
+
+  h1 {
+    font-size: 9vw;
+
+  }
+
+  h2 {
+    font-size: 6vw;
+  }
+
+  p {
+    font-size: 2.8vw;
+  }
+
+
+  .text.right {
+    margin-right: 10vw;
+    padding-bottom: 20vw;
+  }
+
+
+  .text.left {
+    margin-left: 10vw;
+    padding-bottom: 20vw;
+  }
+
+
+
+  .bottomline {
+    background-color: rgb(74, 180, 194);
+    width: 100%;
+    height: 1.5vw;
+  }
+
+  .topline {
+    background-color: rgb(74, 180, 194);
+    grid-column: 1/4;
+    grid-row: 2/4;
+    height: 1.5vw;
+    margin-top: -1.5vw;
+  }
+
+  /***************************** R-title *****************************/
+
+  #first.container {
+    grid-template-rows: 11vw 1fr 11vw;
+    margin-bottom: 20vw;
+  }
+
+
+  .boxL h1 {
+    padding-right: 10vw;
+  }
+
+  .boxR h1 {
+    padding-left: 10vw;
+  }
+
+
+
+  /***************************** R2 *****************************/
+
+  #second.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vw 50vh 30vw;
+  }
+
+  #second .mainimgL img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  #second .mainimgL {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin-right: 0vw;
+  }
+
+  #second .sideimgR img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  #second .sideimgR {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    height: 100%;
+    overflow: hidden;
+
+  }
+
+  #second .scroll {
+    display: flex;
+    flex-direction: row;
+    height: 28vw;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 2vw;
+    padding-top: 2vw;
+  }
+
+  /***************************** R3 *****************************/
+
+  #third.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vw 50vh 30vw;
+  }
+
+  #third .boxR {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #third .mainimgR img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  #third .mainimgR {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin-left: 0vw;
+  }
+
+  #third .sideimgL img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  #third .sideimgL {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  #third .scroll {
+    display: flex;
+    flex-direction: row;
+    height: 28vw;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 2vw;
+    padding-top: 2vw;
+
+  }
+
+
+  /***************************** R4 ***************************/
+  #fourth.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vw 50vh 30vw;
+  }
+
+  #fourth .mainimgL img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  #fourth .mainimgL {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin-right: 0vw;
+  }
+
+  #fourth .sideimgR img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  #fourth .sideimgR {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    height: 100%;
+    overflow: hidden;
+
+  }
+
+  #fourth .scroll {
+    display: flex;
+    flex-direction: row;
+    height: 28vw;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 2vw;
+    padding-top: 2vw;
+  }
+
+  /***************************** R5 *****************************/
+
+  #fifth.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vw 50vh 30vw;
+  }
+
+  #fifth .boxR {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #fifth .mainimgR img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  #fifth .mainimgR {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin-left: 0vw;
+  }
+
+  #fifth .sideimgL img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  #fifth .sideimgL {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  #fifth .scroll {
+    display: flex;
+    flex-direction: row;
+    height: 28vw;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 2vw;
+    padding-top: 2vw;
+
+  }
+
+
+  /***************************** R6 ***************************/
+  #sixth.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vw 50vh 30vw;
+  }
+
+  #sixth .mainimgL img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  #sixth .mainimgL {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin-right: 0vw;
+  }
+
+  #sixth .sideimgR img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  #sixth .sideimgR {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    height: 100%;
+    overflow: hidden;
+
+  }
+
+  #sixth .scroll {
+    display: flex;
+    flex-direction: row;
+    height: 28vw;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 2vw;
+    padding-top: 2vw;
+  }
+
+
+}
